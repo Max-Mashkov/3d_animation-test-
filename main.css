@@ -19,33 +19,39 @@ body, html {
 
 .top {
     transform: rotate(-45deg) skew(15deg, 15deg);
-    background-image: url('img/sticker.png');
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: linear-gradient(45deg, blue, white);
 }
 
 .left {
     background: black;
     transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+    background: linear-gradient(-120deg, blue, white);
 }
 .right {
     background: black;
     transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+    background: linear-gradient(120deg, blue, white);
 
 }
-
-.cube:hover .right {
-    transform: translate(80%, 100%) rotate(-15deg) skew(-15deg, -15deg) ;
+.cube:hover .top {
+    transform: translate(0, -30%) rotate(-45deg) skew(15deg, 15deg);
     transition: 1s;
+    background: linear-gradient(-90deg, blue, white);
 }
 
 .cube:hover .left {
     transform: translate(-80%, 100%) rotate(15deg) skew(15deg, 15deg);
-    transition: 1s;
+    background: linear-gradient(270deg, white, blue);
+    transition: 2s;
 }
 
-.cube:hover .top {
-    transform: translate(0, -30%) rotate(-45deg) skew(15deg, 15deg);
-    transition: 1s;
+.cube:hover .right {
+    transform: translate(80%, 100%) rotate(-15deg) skew(-15deg, -15deg) ;
+    transition: 3s;
+    background: linear-gradient(0, blue, white);
 }
+
+
+
+
 
