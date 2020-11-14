@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.cube {
+    position: relative;
+    margin-left: 50%;
+    margin-top: 155px;
+}
+
+.side {
+    height: 195px;
+    position: absolute;
+    width: 195px;
+    margin: 0;
+}
+
+.top {
+    transform: rotate(-45deg) skew(15deg, 15deg);
+    background-image: url('img/sticker.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.left {
+    background: black;
+    transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+}
+.right {
+    background: black;
+    transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+
+}
+
+.cube:hover .right {
+    transform: translate(80%, 100%) rotate(-15deg) skew(-15deg, -15deg) ;
+    transition: 1s;
+}
+
+.cube:hover .left {
+    transform: translate(-80%, 100%) rotate(15deg) skew(15deg, 15deg);
+    transition: 1s;
+}
+
+.cube:hover .top {
+    transform: translate(0, -30%) rotate(-45deg) skew(15deg, 15deg);
+    transition: 1s;
+}
+
